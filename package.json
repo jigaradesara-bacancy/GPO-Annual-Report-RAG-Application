@@ -1,0 +1,15 @@
+{
+  "name": "gpo-rag",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "chroma": "docker compose up -d",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "ingest-sample": "npm --prefix server run ingest-sample",
+    "test": "npm --prefix server test && npm --prefix client test",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix client run typecheck",
+    "build": "npm --prefix server run build && npm --prefix client run build"
+  }
+}
